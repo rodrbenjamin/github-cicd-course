@@ -45,7 +45,7 @@ jobs:
           context: ./task_b/
           file: ./task_b/Dockerfile
           push: true
-          tags: 'ghcr.io/${{ github.repository }}:${{ inputs.tag }}'
+          tags: 'ghcr.io/${{ github.repository }}:${{ inputs.tag }}'#haha
   test:
     runs-on: "ubuntu-latest"
     name: Docker image test
