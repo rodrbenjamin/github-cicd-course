@@ -54,6 +54,8 @@ jobs:
     services:
       task-a:
         image: 'ghcr.io/${{ github.repository }}:${{ inputs.tag }}'
+        ports:
+          - 8080:80
     steps:
       - name: curl
         run: curl 127.0.0.1:8080/index.html
