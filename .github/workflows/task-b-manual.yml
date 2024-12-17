@@ -7,11 +7,10 @@ on:
         description: 'Message'
         required: true
         default: 'Hello CI/CD'
-      tags:
+      tag:
         description: 'Tag added to commit'
         required: true
         default: 'There has to be tag'
-      # TODO: add tag input
 permissions:
   contents: read
   packages: write
